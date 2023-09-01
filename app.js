@@ -33,8 +33,10 @@ const render = () => {
     let detailHTML = '' ;
     if(info){
       detailHTML = `
-        <div> <h1>${info.name}</h1>
-        <h2> ${info.breed} </h2> <br>
+        <div> <div></div>
+        <p>Player Tag</p>
+        <h1>${info.name}</h1> <hr>
+        <h2> ${info.breed} </h2> 
         <img src="${info.imageUrl}"> </div> `;
     } ;
 
