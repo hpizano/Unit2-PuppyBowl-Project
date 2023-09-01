@@ -17,13 +17,13 @@ h2 {
 #detail {
     display: flex;
     justify-content: center;
-    border: solid 2px black;
+    /* border: solid 2px black; */
 }
 
 #detail > div { 
     border: solid 2px black;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
    
     height: 500px;
@@ -35,7 +35,8 @@ h2 {
     height: 300px;
     width: 200px;
     border: solid 2px black;
-    display: inline-block;
+    /* display: inline-block; */
+    align-self: center;
     
 }
 
