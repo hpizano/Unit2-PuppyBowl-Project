@@ -3,6 +3,17 @@ body {
     background-color: rgb(176, 172, 172);
 }
 
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+#detail > div {
+    color: rgb(170, 8, 8);
+}
+
 .selected {
     border: solid 2px rgb(24, 25, 25);
 }
