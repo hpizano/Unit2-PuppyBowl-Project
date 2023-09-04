@@ -23,17 +23,20 @@ const render = () => {
         <h2><a href="#${element.id !== hash ? element.id : ''}" class = "${ element.id === hash ? 'selected':''}"> 
         ${element.name} </a></h2> 
           <h2> ${element.breed} </h2>
-        </div><hr>` ;
+        </div>` ;
     }).join('');
 
     list.innerHTML = html ;
 
-    const info = players.find( player => { return player.id === hash });
+    const info = players.find( player => { 
+        return player.id === hash;
+    });
     
     let detailHTML = '' ;
     if(info){
       detailHTML = `
-        <div> <div></div>
+        <div class="rainbow-bord"> 
+        <div></div>
         <p>Player Tag</p>
         <h1>${info.name}</h1> <hr>
         <h2> ${info.breed} </h2> 
@@ -43,6 +46,13 @@ const render = () => {
     detail.innerHTML = detailHTML ;
     
 } ;
+
+//Defining method to scroll to bottom of page only when hashchange occurs
+// function activate() { 
+//     if(players.id === window.location.hash) {
+//     window.scrollTo(0, document.body.scrollHeight);
+//     };
+// };
 
 //function that allows me to trigger a hashchange event listener
 //triggers function to scroll to bottom of page
